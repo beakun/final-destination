@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 
 
 body {
     font-family: 'Exo 2', sans-serif;
+    background-color: rgb(81, 75, 89);
 }
 
 h1 {
@@ -24,18 +27,47 @@ main {
     border-radius: 16px;
 
 }
+.header{
+    transform: translateY(70px);
+    opacity: 0;
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    background-color: rgb(40, 36, 45);
+    width: 100%;
+    height: 400px;
+    border-radius: 23px;
+}
+.header h1{
+    
+    transform: translateY(20px);
+    opacity: 0;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Chewy", system-ui;
+    font-size: 100px;
+    color:rgb(162, 142, 186);
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    animation-delay: 1200ms;
+}
 
-.cb1 {
-    background-color: #fb8500;;
-}
-.cb2 {
-    background-color: #ffb703;
-}
-.cb3 {
-    background-color: #219ebc;
-}
-.cb4 {
-    background-color: #8ecae6;
+.header p {
+    position: fixed;
+    top: 20%;
+    left: 34%;
+    color: rgb(226, 216, 238);
+    font-family: "Marck Script", cursive;
+    font-size: 50px;
+    font-style: normal;
 }
 
+
+
+@keyframes header{
+    from{
+        opacity: -1;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
