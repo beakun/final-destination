@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
-
-
 body {
     font-family: 'Exo 2', sans-serif;
     background-color: rgb(81, 75, 89);
@@ -13,61 +11,104 @@ h1 {
 }
 
 main {
-    width: 768px;
     margin: auto;
-}
+     padding-bottom: 50px;
+ }
 
 
-.cat_box {
-    font-size: 35px;
-    text-align: center;
-    margin: 10px;
-    height: 90px;
-    padding: 16px;
-    border-radius: 16px;
 
-}
-.header{
+.header {
+     position: relative; 
+     display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     transform: translateY(70px);
     opacity: 0;
     animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
     background-color: rgb(40, 36, 45);
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 23px;
 }
-.header h1{
-    
+
+
+.header h1 {
     transform: translateY(20px);
     opacity: 0;
     padding: 0%;
-    margin: 0%;
+    margin: 0;
     font-family: "Chewy", system-ui;
     font-size: 100px;
-    color:rgb(162, 142, 186);
+    color: rgb(212, 179, 252);
     animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
     animation-delay: 1200ms;
 }
 
-.header p {
-    position: fixed;
-    top: 20%;
-    left: 34%;
-    color: rgb(226, 216, 238);
-    font-family: "Marck Script", cursive;
-    font-size: 50px;
-    font-style: normal;
+.zxc {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    font-family: "Chewy", system-ui;
+    color: rgb(156, 132, 187);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    animation-delay: 1700ms; 
 }
 
-
-
-@keyframes header{
-    from{
-        opacity: -1;
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+h2{
+    opacity: 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(205, 158, 206);
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    transform: translateY(-20px);
+    animation-delay: 1700ms;
 }
 
+a{
+    opacity: 0;
+    font-size: 40px;
+    display: block; 
+    margin: 0 auto;
+    width: 220px; 
+    text-align: center;
+    padding: 12px 24px;
+    background-color: #bc90b1;
+    color: rgb(40, 36, 45);;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: 1000ms;
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    transform: translateY(-20px);
+    animation-delay: 3500ms;
+}
+
+a:hover{
+    background-color: rgb(40, 36, 45);;
+    color: #bc90b1;
+}
+
+.foot{
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.022);
+    width: 100%;
+    padding: 20px 0;
+    margin-top: auto; 
+    height: 30vh;
+    animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
+    transform: translateY(100px);
+    animation-delay: 1800ms;
+}
+
+@keyframes header {
+    from {
+        opacity: 0;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
