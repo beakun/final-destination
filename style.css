@@ -45,6 +45,7 @@ main {
     animation-delay: 1200ms;
 }
 
+
 .zxc {
     font-size: 40px;
     padding: 0;
@@ -57,6 +58,7 @@ main {
     animation-delay: 1700ms; 
 }
 
+
 h2{
     opacity: 0;
     text-align: center;
@@ -66,6 +68,7 @@ h2{
     transform: translateY(-20px);
     animation-delay: 1700ms;
 }
+
 
 a{
     opacity: 0;
@@ -86,10 +89,12 @@ a{
     animation-delay: 3500ms;
 }
 
+
 a:hover{
     background-color: rgb(40, 36, 45);;
     color: #bc90b1;
 }
+
 
 .foot{
     opacity: 0;
@@ -102,6 +107,7 @@ a:hover{
     transform: translateY(100px);
     animation-delay: 1800ms;
 }
+
 
 @keyframes header {
     from {
