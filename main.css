@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+
+body {
+    background-color: rgb(140, 119, 142);
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", sans-serif;
+    animation: color 2s 3900ms forwards;
+}
+
+*{
+    font-family: "Playpen Sans", cursive;
+}
+
+.headHello {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(110, 94, 111);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 33ms forwards,
+               bye 1s cubic-bezier(.24,.66,.67,.97) 3900ms forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+}
+
+.mainHello {
+    position: absolute; 
+    top: 30%;
+    width: 100%;
+    height: 40%;
+    pointer-events: none;
+}
+
+.mainHello h1 {
+    font-family: "Sour Gummy", sans-serif !important;
+    position: relative;
+    top: -2%;
+    font-size: clamp(80px, 15vw, 170px);
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    color: rgb(202, 202, 202);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 1100ms forwards,
+                 bye 1s cubic-bezier(.24,.66,.67,.97) 3900ms forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.mainHello p {
+    font-family: "Sour Gummy", sans-serif !important;
+    position: relative;
+    font-size: clamp(40px, 8vw, 90px);
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    color: rgb(179, 179, 179);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 1600ms forwards,
+                 byer 1s cubic-bezier(.24,.66,.67,.97) 3900ms forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.footHello {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(110, 94, 111);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 33ms forwards,
+                 byer 1s cubic-bezier(.24,.66,.67,.97) 3900ms forwards;
+    opacity: 0;
+    transform: translateY(-30px);
+    pointer-events: none;
+}
+
+nav {
+    transform: translateY(-40px);
+    opacity: 0;
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 4500ms forwards;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.hub {
+    padding: 0;
+    margin: 0;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: bold;
+}
+
+.xd {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.batR, .batM, .batRL {
+    padding: clamp(15px, 3vw, 20px) clamp(30px, 5vw, 60px);
+    font-weight: bold;
+    background-color: #6b7983;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(14px, 2vw, 16px);
+    transition: all 0.7s ease;
+    min-width: 150px;
+    text-align: center;
+}
+
+a {
+    font-family: "Playpen Sans", cursive !important;
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s ease;
+    display: inline-block;
+    width: 100%;
+}
+
+.batR:hover {
+    background-color: #4678b0;
+    color: #002d5f;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.batM:hover {
+    background-color: #2ecc71;
+    color: #38762c;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.batRL:hover {
+    background-color: #ebd278; 
+    color: #908905;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.about {
+    font-family: "Playpen Sans", cursive !important;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(40px);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 4500ms forwards;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.about h1 {
+    font-family: "Playpen Sans", cursive !important;
+    font-size: clamp(60px, 10vw, 110px);
+    margin: 0;
+    color: rgb(247, 200, 249);
+    padding: 10px 20px;
+    word-wrap: break-word;
+}
+
+.about p {
+    font-family: "Playpen Sans", cursive !important;
+    font-size: clamp(20px, 4vw, 45px);
+    margin: 10px 0;
+    color: rgb(208, 183, 233);
+    padding: 0 20px;
+    word-wrap: break-word;
+    max-width: 90%;
+}
+
+
+        
+
+@keyframes main {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bye {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes byer {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@keyframes color {
+    from {
+        background-color: rgb(140, 119, 142);
+    }
+    to {
+        background-color: rgb(167, 142, 162);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .xd {
+        gap: 10px;
+    }
+    .batR, .batM, .batRL {
+        min-width: 120px;
+        padding: 12px 20px;
+    }
+            
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playpen Sans", cursive;
+}
+
+.heade{
+    bottom: 70%;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    background-color: rgba(255,255,255,0.1);
+    z-index: -100;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 211ms forwards;
+}
+.foot{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -100;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 211ms forwards;
+}
+
+body {
+    background-color: #bfa0c0;
+    color: #343a40;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blok {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: main 1.3s cubic-bezier(.24,.66,.67,.97) 1000ms forwards;
+}
+
+.lol {
+    font-size: 120px;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.titul {
+    font-size: 32px;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 15px;
+}
+
+.ale {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.video {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.return {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a78ca2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.6s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.return:hover {
+    background-color: #d6c8d4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .lol {
+        font-size: 80px;
+    }
+    
+    .titul {
+        font-size: 24px;
+    }
+    
+    .ale {
+        font-size: 16px;
+    }
+    
+    .video {
+        width: 150px;
+        height: 150px;
+    }
+}
+@keyframes main{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

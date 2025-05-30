@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+       
+.heade{
+    opacity: 0;
+    transform: translateY(-30px);
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    background-color: rgba(255, 255, 255, 0.176);
+    z-index: -100;
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 111ms forwards;
+}
+.foot{
+    opacity: 0;
+    transform: translateY(30px);
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -100;
+    animation: main 1s cubic-bezier(.24,.66,.67,.97) 111ms forwards;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: main 1.4s cubic-bezier(.24,.66,.67,.97) 1000ms forwards;
+}
+
+.hub {
+    padding: 0;
+    margin: 0;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: bold;
+}
+
+.xd {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.batR, .batM, .batRL {
+    padding: clamp(15px, 3vw, 20px) clamp(30px, 5vw, 60px);
+    font-weight: bold;
+    background-color: #6b7983;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(14px, 2vw, 16px);
+    transition: all 0.7s ease;
+    min-width: 150px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s ease;
+    display: inline-block;
+    width: 100%;
+}
+
+.batR:hover {
+    background-color: #4678b0;
+    color: #002d5f;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.batM:hover {
+    background-color: #2ecc71;
+    color: #38762c;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.batRL:hover {
+    background-color: #ebd278; 
+    color: #908905;
+    transform: scale(1.05) rotate(1deg);
+}
+
+
+* {
+    font-family: "Sour Gummy", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playpen Sans", cursive;
+}
+
+body {
+    background-color: #bf9ec6;
+    color: #ff0000;
+    min-height: 100vh;
+}
+
+.pon {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(110, 90, 115);
+    border-radius: 8px;
+    padding: 25px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: main 1.3s cubic-bezier(.24,.66,.67,.97) 2000ms forwards;
+}
+
+.titul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titul h1 {
+    font-size: 42px;
+    color: #8cd88c;
+    margin-bottom: 8px;
+}
+
+.titul p {
+    font-size: 16px;
+    color: #908d8d;
+}
+
+.blok {
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.073);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.blok h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(227, 200, 235);
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+
+.btnA{
+    background-color: #c1a2bd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.8s;
+    text-align: center;
+}
+
+.btnc{
+    background-color: #c2afbe;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.8s;
+    text-align: center;
+}
+
+.btnl{
+    background-color: #a9a9a9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.8s;
+    text-align: center;
+}
+
+.btn {
+    background-color: #9f779a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.8s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #ca96c0;
+    transform: translateY(-2px);
+    transition: 0.7s;
+}
+
+.btnA:hover{
+    background-color: rgb(194, 167, 202);
+    transform: translateY(1px) rotate(1deg);
+    transition: 0.7s;
+}
+
+.btnc:hover{
+    background-color: rgb(153, 145, 156);
+    transform: translateY(2px);
+    transition: 0.7s;
+}
+
+.btnl:hover{
+    background-color: #c1c1c1;
+    transform: translateY(-2px) rotate(-0.5deg);
+    transition: 0.7s;
+}
+
+@media (max-width: 1024px) {
+    .titul h1 {
+        font-size: 40px;
+    }
+    .grid{
+        gap: 10px;
+    }
+    .pon{margin-left: 20px;margin-right: 20px;}
+}
+
+@keyframes main{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
