@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+
+*{font-family: "Playpen Sans", cursive;}
 
 body {
     font-family: 'Exo 2', sans-serif;
@@ -83,7 +87,7 @@ a{
     color: rgb(40, 36, 45);;
     text-decoration: none;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
+    font-family: "Playpen Sans", cursive !important;
     transition: 1000ms;
     animation: header 1s cubic-bezier(.24,.66,.67,.97) forwards;
     transform: translateY(20px);
